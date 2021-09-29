@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    padding:0;
+    background:#002D56;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*...GENERAL STYLING OF LOGIN/SIGN UP PAGE...*/
+#box{
+    height: 550px;
+    width: 1100px;
+    background:white;
+    border:3px solid #9C2EDF;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+    -webkit-box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+    -moz-box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+
+}
+
+#main{
+    height: 650px;
+    width: 580px;
+    background:#9C2EDF;
+    position: absolute;
+    top:50%;
+    left:70%;
+    border:3px solid #9C2EDF;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: linear-gradient(-45deg, #03112D, #002D56, #023b5a, #031130);
+    background-size: 400%, 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+#loginSection, #signinSection {
+    position: absolute;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#signinSection {
+    top:45%;
+    left:75%;
+    visibility: hidden;
+}
+
+
+#loginSection h1, #signinSection h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: white;
+
+}
+
+#loginSection input, #signinSection input{
+    height: 40px;
+    width: 300px;
+    border:0;
+    outline:none;
+    border-bottom: 1px solid #ffff;
+    margin: 5px;
+    background: none;
+}
+
+input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+#loginSection button, #signinSection button{
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: 1px solid white;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 175px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#loginSection button:hover, #signinSection button:hover{
+    background-color:#9C2EDF;
+    border: 1px solid #9C2EDF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#loginBtn, #signupBtn{
+    height:35px;
+    width: 120px;
+    background:#9C2EDF;
+    color:white;
+    border: 1px solid #ffffff;
+    outline: none;
+    position: absolute;
+    top:65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+}
+
+
+#signupBtn{
+    left:25%;
+}
+
+#loginBtn:hover, #signupBtn:hover{
+    background-color:transparent;
+    border: 1px solid #9C2EDF;
+    color: #9C2EDF;
+    cursor: pointer;
+    
+}
+
+#loginMessage, #signupMessage{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25Px;
+    color: #03112D;
+    position: absolute;
+    top:35%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#signupMessage{
+    left:25%;
+}
+
+/*...ANIMATION EFFECT ON GRADIENT...*/
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+
+
+
+
+
+
+
+
+
+}
