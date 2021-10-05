@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    color:white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+a {
+    display: inline;
+    color:white;
+    text-decoration: none; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     margin-top: 10px;
+}
+
+p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+/*...navigation...*/
+.nav-holder{
+    height: 55px;  
+    background-color: #03112D;
+    padding-top: 10px;
+}
+
+li b {
+    position: relative;
+    margin-left: 30%;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+.logo-nav {
+    float: left;
+    margin-left: 2%;
+}
+
+.logo-nav:hover {
+    float: left;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.logo-text {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    float: left;
+    margin-top: 2px;
+    color: white;
+    margin-left: 0.5%;
+}
+
+.signout-button {
+    height: 25px;
+    width: 7%;
+    background-color: #9C2EDF;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    float: right;
+    text-align: center;
+    margin-right: 5%;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.signout-button:hover {
+    height: 25px;
+    width: 7%;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    float: right;
+    text-align: center;
+    margin-right: 5%;
+    background-color:transparent;
+    border: 1px solid #9C2EDF;
+    color: #9C2EDF;
+    cursor: pointer;
+    
+}
