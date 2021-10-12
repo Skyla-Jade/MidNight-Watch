@@ -30,4 +30,43 @@ $(document).ready(function(){
 
     });
 
+    $(".SUbutton").on("click", function(){
+    
+    
+            var firstName = $(".first").val();
+            var lastName = $(".last").val();
+            var emailAdd = $(".email").val();
+            var pass1 = $(".pass1").val();
+            var pass2 = $(".pass2").val();
+    
+        //check password is same as current
+            if(pass1 != pass2){
+                alert("Your Passwords do not match!");
+            }else{
+                //Set storage for data
+                sessionStorage.setItem("first", firstName);
+                sessionStorage.setItem("last", lastName);
+                sessionStorage.setItem("email", emailAdd);
+               
+            }
+    
+        });//get data onclick
+    
+        $(".first_out").text(sessionStorage.getItem("first"));
+        $(".last_out").text(sessionStorage.getItem("last"));
+        $(".email_out").text(sessionStorage.getItem("email"));
+        $(".user_out").text(sessionStorage.getItem("user"));
+    
+    
+        //clear onclick
+        $(".clear").on("click", function(){
+            sessionStorage.removeItem("first");
+            sessionStorage.removeItem("last");
+            sessionStorage.removeItem("email");
+            sessionStorage.removeItem("user");  
+    
+        });
+    
+
+
 });// Ready Function End
