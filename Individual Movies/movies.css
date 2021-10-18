@@ -3,245 +3,271 @@ body{
     padding: 0;
 }
 
-li{
-    display: inline;
-    color:white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 20px;
-    vertical-align: middle;
-    margin-left: 5%;
-    margin-top: 20px;
-}
-
-a {
-    display: inline;
-    color:white;
-    text-decoration: none; 
-    font-family: 'Barlow Semi Condensed', sans-serif;
-}
-
-ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-     margin-top: 10px;
-}
-
 p {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
 /*...navigation...*/
-.nav-holder{
-    height: 55px;  
-    background-color: #03112D;
-    padding-top: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li b {
-    position: relative;
-    margin-left: 30%;
-    font-size: 20px;
-    color: white;
-    font-weight: normal;
-}
-
-.logo-nav {
-    float: left;
-    margin-left: 2%;
-}
-
-.logo-nav:hover {
-    float: left;
-    margin-left: 2%;
-    cursor: pointer;
-}
-
-.logo-text {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 15px;
-    float: left;
-    margin-top: 2px;
-    color: white;
-    margin-left: 0.5%;
-}
-
-.signout-button {
-    height: 25px;
-    width: 7%;
-    background-color: #9C2EDF;
-    color: white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 15px;
-    float: right;
-    text-align: center;
-    margin-right: 5%;
-    border: 1px solid white;
-    transition: all 0.5s;
-}
-
-.signout-button:hover {
-    height: 25px;
-    width: 7%;
-    color: white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 15px;
-    float: right;
-    text-align: center;
-    margin-right: 5%;
-    background-color:transparent;
-    border: 1px solid #9C2EDF;
-    color: #9C2EDF;
-    cursor: pointer;
-    
-}
-
-.main-block {
-width: 100%;
-height: 900px;
-float: left;
-}
-
-/*...John Wick Images...*/
-.johnwick-blur {
-    width: 100%;
-    height: 900px;
-    background-image: url(../Images/johnwickblur.jpg);
-    position: absolute;
-    float: left;
-    background-size: cover;
-}
-
-.johnwick-image {
-    position: relative;
-    height: 700px;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-top: 80px;
-    float: left;
-    background-image: url(../Images/johnwick2.jpg);
-    background-size: cover;
-}
-
-/*...Movie Info...*/
-.info-block {
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 46px 0px 48px 11px rgba(0,0,0,0.8);
-    -webkit-box-shadow: 46px 0px 48px 11px rgba(0,0,0,0.8);
-    -moz-box-shadow: 46px 0px 48px 11px rgba(0,0,0,0.8);
-}
-
-.info {
-    width: 70%;
-    margin-left: 15%;
-}
-
-.title {
-    color: white;
-    font-size: 60px;
-    margin-top: 50px;
+html {
+    font-size: 62.5%;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.rating {
-    color: white;
-    font-size: 15px;
-    margin-top: 20px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    vertical-align: middle;
-}
-.basics {
-    color: white;
-    font-size: 20px;
-    margin-top: 50px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+li {
+    list-style: none;
 }
 
-.director {
-    color: white;
-    font-size: 15px;
-    margin-top: 20px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+a {
+    text-decoration: none;
 }
 
-.stars {
-    color: white;
-    font-size: 15px;
-    margin-top: 20px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+.header{
+  border-bottom: 1px solid #E2E8F0;
 }
 
-.story {
-    color: white;
-    font-size: 15px;
-    margin-top: 20px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #04163a;
 }
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav-link:hover{
+  color: #9C2EDF;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #9C2EDF;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #04163a;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+
+
+
+
+
+
 
 
 /*...footer...*/
-.footer {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+  font-size: 15px;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 20px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #9C2EDF;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #9C2EDF;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #9C2EDF;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #9C2EDF;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #9C2EDF;
+}
+footer a{
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+footer a:hover{
+  color: #9C2EDF;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
     width: 100%;
-    height: 60px;
-    background-color: #03112D;
-    float: left;
-    margin-top: 65px;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
 
-.logo-footer {
-    float: left;
-    margin-left: 2%;
-    margin-top: 12px;
-}
-
-.footer-text {
-    float: left;
-    font-size: 12px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: white;
-    margin-top: 22px;
-    margin-left: 1%;
-}
-
-.instagram {
-    margin-left: 2%;
-    margin-top: 15px;
-    float: right;
-    margin-right: 2%;
-}
-
-.facebook {
-    margin-left: 2%;
-    margin-top: 15px;
-    float: right;
-}
-
-.twitter {
-    margin-top: 15px;
-    float: right;
-}
-
-.instagram:hover {
-    cursor: pointer;
-    margin-left: 2%;
-    margin-top: 15px;
-    float: right;
-    margin-right: 2%;
-}
-
-.facebook:hover {
-    cursor: pointer;
-    margin-left: 2%;
-    margin-top: 15px;
-    float: right;
-}
-
-.twitter:hover {
-    cursor: pointer;
-    margin-top: 15px;
-    float: right;
-}
