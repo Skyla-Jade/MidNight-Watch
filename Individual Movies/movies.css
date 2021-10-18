@@ -124,13 +124,7 @@ float: left;
     background-size: cover;
 }
 
-.stripes {
-    position: absolute;
-    margin-left: 83.55%;
-    margin-top: 27.55%;
-}
-
-/*...John Wick Info...*/
+/*...Movie Info...*/
 .info-block {
     width: 50%;
     height: 100%;
@@ -201,53 +195,53 @@ float: left;
 .logo-footer {
     float: left;
     margin-left: 2%;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .footer-text {
     float: left;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 1%;
 }
 
 .instagram {
-    margin-left: 1%;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 15px;
     float: right;
     margin-right: 2%;
 }
 
 .facebook {
-    margin-left: 1%;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 15px;
     float: right;
 }
 
 .twitter {
-    margin-top: 5px;
+    margin-top: 15px;
     float: right;
 }
 
 .instagram:hover {
     cursor: pointer;
-    margin-left: 1%;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 15px;
     float: right;
     margin-right: 2%;
 }
 
 .facebook:hover {
     cursor: pointer;
-    margin-left: 1%;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 15px;
     float: right;
 }
 
 .twitter:hover {
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 15px;
     float: right;
 }
