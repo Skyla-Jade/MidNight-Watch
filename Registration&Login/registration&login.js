@@ -30,43 +30,48 @@ $(document).ready(function(){
 
     });
 
-    $(".SUbutton").on("click", function(){
-    
-    
-            var firstName = $(".first").val();
-            var lastName = $(".last").val();
-            var emailAdd = $(".email").val();
-            var pass1 = $(".pass1").val();
-            var pass2 = $(".pass2").val();
-    
-        //check password is same as current
-            if(pass1 != pass2){
-                alert("Your Passwords do not match!");
-            }else{
-                //Set storage for data
-                sessionStorage.setItem("first", firstName);
-                sessionStorage.setItem("last", lastName);
-                sessionStorage.setItem("email", emailAdd);
-               
-            }
-    
-        });//get data onclick
-    
-        $(".first_out").text(sessionStorage.getItem("first"));
-        $(".last_out").text(sessionStorage.getItem("last"));
-        $(".email_out").text(sessionStorage.getItem("email"));
-        $(".user_out").text(sessionStorage.getItem("user"));
-    
-    
-        //clear onclick
-        $(".clear").on("click", function(){
-            sessionStorage.removeItem("first");
-            sessionStorage.removeItem("last");
-            sessionStorage.removeItem("email");
-            sessionStorage.removeItem("user");  
-    
-        });
-    
-
-
 });// Ready Function End
+
+function validateLogin() {
+
+    let email = document.querySelector('.email_l').value;
+  
+    //   Expression to test email
+    let emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+    // if (email.match(emailCheck)) {
+    //     //fine
+    // } else {
+    //   alert('Please enter a valid email address.');
+    //   return false;
+    // }
+  }
+  
+  function validateSignup() {
+
+    let email = document.querySelector('.email_s').value;
+    let password1 = document.querySelector('.pass1').value;
+    let password2 = document.querySelector('.pass2').value;
+    let user = document.querySelector('.user').value;
+  
+    //   Expression to test email
+    let emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+    //if (email.match(emailCheck)) {
+      //if (user.length >= 8) {
+        if (password1 === password2) {
+          return true;
+        } else {
+          alert('Passwords need to match.');
+          return false;
+        }
+      // } else {
+      //   alert('Username needs to be at least 8 characters.');
+      //   return false;
+      // }
+    // } else {
+    //   alert('Please enter a valid email address.');
+    //   return false;
+    // }
+  }
+  
