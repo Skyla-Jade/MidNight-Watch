@@ -5,12 +5,11 @@ body{
 
 p {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white
 }
 
 
 /*...navigation...*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -270,3 +269,76 @@ footer a:hover{
   }
 }
 
+
+/*...content...*/
+
+.background {
+  height: 900px;
+  background-color: #04163a;
+  padding-top: 50px;
+}
+
+.main-block {
+  height: 800px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 18px 0px 38px 32px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 18px 0px 38px 32px rgba(0,0,0,0.75);
+  -moz-box-shadow: 18px 0px 38px 32px rgba(0,0,0,0.75);
+}
+
+.movie-image {
+  height: 800px;
+  background-size: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.title {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 100px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}
+
+.rating {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}
+
+.desc {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}
+
+.status {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}
+
+.tagline {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}
+
+.language {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+}

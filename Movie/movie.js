@@ -23,7 +23,7 @@ $(document).ready(function(){
     
                 var card = "<div class='MovieCont col-4 col-lg-2 col-md-4 col-sm-4'>\
                                 <div class='MovieBlock'>\
-                                <div class='Lol hover'><h2>"+ Popular.results[i].original_title +"</h2><p>"+ Popular.results[i].vote_average +"</p><p>"+ Popular.results[i].release_date +"</p></div>\
+                                <a href='../Individual Movies/individual.html?id=" + Popular.results[i].id + "'><div class='Lol hover'><h2>"+ Popular.results[i].original_title +"</h2><p>"+ Popular.results[i].vote_average +"</p><p>"+ Popular.results[i].release_date +"</p></div></a>\
                                 <div class='image'><img src='https://image.tmdb.org/t/p/original"+ Popular.results[i].poster_path +"' style='height: 100%; width: 100%; object-fit: cover'></div>\
                             </div>"
                 

@@ -10,6 +10,7 @@ $(".nav-logo").mouseleave(function() {
 });
 
 
+    //navigation
     //hamburger icon
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -30,6 +31,48 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+//individual movie page content
+
+$(function() {
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+const id = urlParams.get('id');
+
+const url ='https://api.themoviedb.org/3/movie/' + id + '?api_key=9bff47053902d522f6ec7ea9926c68c2'
+$.getJSON(url, function(results){
+
+     var image = "https://image.tmdb.org/t/p/original/" + results.poster_path;
+     var title = results.original_title;
+     var description = results.overview;
+     var rating = results.vote_average;
+     var prod =  results.production_companies;
+     var status = results.status;
+     var tag = results.tagline;
+     var lang = results.original_language;
+
+
+        $(".title").text(title);
+        $(".rating").text(rating);
+        $(".movie-image").css("background-image","url("+image+")");
+        $(".desc p").text(description);
+        $(".status p").text(status);
+        $(".tagline p").text(tag);
+        $(".language p").text(lang);
+
+
+});
+
+
+
+
+
+
+
+
+
+});
 
 
 

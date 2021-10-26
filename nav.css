@@ -1,9 +1,3 @@
-body{
-    margin:0;
-    padding:0;
-    background-color:black;
-}
-
 /*...navigation...*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
@@ -122,147 +116,8 @@ a {
 
 
 
-.description{
-    margin-top: 20px;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 15px;
-}
-
-.rating {
-  font-size: 25px;
-}
-
-.Lol{
-    font-size: 24px;
-    margin: 0 auto;
-    position:absolute;
-    padding-top: 40px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-}
-
-.row h1{
-    padding-top: 20px;
-    color: black;
-}
 
 
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #000;
-}
-
-.MovieBlock{
-    background-color:#04163a;
-    height: 340px;
-    width: 220px;
-    margin: 0 auto;
-}
-
-
-.hover{
-    background-color: #000000b2;
-    height: 340px;
-    width: 220px;
-    position: absolute;
-}
-
-.MovieTitle{
-    font-size: 70px;
-    font-weight: 600;
-}
-
-
-.imgcont{
-    width: 100%;
-    height: 500px;
-    padding: 0 !important;
-    background-image: url(DSC_0095.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.movieinfo{
-    color: white;
-    padding-top: 70px;
-    padding-right: 150px;
-    text-align: center;
-    width: 50%;
-    height: 500px;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #121212da 25%);
-}
-
-.image{
-    background-position: center;    
-    background-size: contain;
-    height: 340px;
-    width: 220px;    
-}
-
-.MovieCont{
-    height: 350px;
-    padding-top: 5%;
-}
-
-@media(max-width:800px){
-    .MovieBlock{
-        height: 280px;
-        width: 251,428px;
-    }
-    .image{
-        height: 280px;
-        width: 251,428px; 
-    }
-    .MovieCont{
-        height: 280px;
-        padding-top: 5%;
-    }
-    .hover{
-        background-color: rgba(0, 0, 0, 0.780);
-        height: 280px;
-        width: 251,428px;
-        position: absolute;
-    }
-}
-
-@media(max-width:600px){
-    .MovieBlock{
-        height: 160px;
-        width: 110px;
-    }
-    .image{
-        height: 160px;
-        width: 110px;  
-    }
-    .MovieCont{
-        height: 180px;
-        padding-top: 5%;
-    }
-    .hover{
-        background-color: rgba(0, 0, 0, 0.780);
-        height: 160px;
-        width: 110px;
-        position: absolute;
-    }
-}
-
-
-
-
-p {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-}
-
-h1{
-    color: white;
-    font-size: 30px;
-    margin-top: 50px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    padding-left:50px;
-}
 
 
 
@@ -280,7 +135,6 @@ footer{
   bottom: 0;
   left: 0;
   background: #111;
-  padding-top: 50px;
 }
 footer .content{
   max-width: 1350px;
@@ -404,12 +258,4 @@ footer a:hover{
   footer .content .middle{
     padding-left: 0;
   }
-}
-
-
-
-
-
-
-
-
+} 
