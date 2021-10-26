@@ -7,6 +7,12 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+
 /*...navigation...*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
@@ -126,7 +132,7 @@ a {
 .Header {
   height: 460px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.801);
+  background-image: url(../Images/galaxy.png);
   float: left;
 }
 
@@ -138,7 +144,7 @@ a {
   background-size: cover;
   float: left;
   margin-top: 75px;
-  margin-left: 200px;
+  
 }
 
 .Username {
@@ -153,7 +159,7 @@ a {
   height: 400px;
  
   color: white;
-  background-color: rgba(0, 0, 0, 0.534);
+  background-color: rgba(0, 0, 0, 0.027);
   float: left;
   text-align: center;
 }
