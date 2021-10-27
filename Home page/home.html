@@ -7,14 +7,16 @@
     <title>Home Page</title>
 
 
-    <!--Linked JS libary-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <!--Linked CSS file-->
+    
+ <!--Linked CSS file-->
   <link rel="stylesheet" href="../Home page/home.css">
 
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
   <!--Linked JS file-->
-  <script src="../Home page/home.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
 
 
  <!--fonts-->
@@ -23,9 +25,13 @@
  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
 
 </head>
-<body>
+  <body>
 
-         <!--navigations-->
+  <div class="container-fluid">
+
+       <!--navigations-->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nav-holder">
         <header class="header">
             <nav class="navbar">
                 <a  href="#" class="nav-logo"><img src="../Images/logo2.png" width="30px">Midnight Watch</a>
@@ -49,10 +55,31 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-    </header>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-12 col-sm-12 col-md-12 col-lg-12 Header">
+        <div class=" col-6 col-sm-6 col-md-4 col-lg-3 Gif"></div>
+        <div class="Username"><h1>UserName</h1><p>-------------------------------</p><p>-------------------------------</p></div>
+      </div><!--header-->
+    </div>
+
+    <div class="row">
+      <div class="AboutUs"><h1>About Us</h1><p>Midnight Watch is a top rating movie streaming website that provides you with entertainment wherever you go!</p>
+        <p>----------------------------------------------------------------------------------------</p>
+        <p>----------------------------------------------------------------------------------------</p>
+        <p>----------------------------------------------------------------------------------------</p>
+        <p>----------------------------------------------------------------------------------------</p>
+        <p>----------------------------------------------------------------------------------------</p>
+        <p>----------------------------------------------------------------------------------------</p>
+      </div><!--About Us-->
+    </div>
+    
   
   
-  
+  </div>
   
   <footer>
     <div class="content">
@@ -89,7 +116,7 @@
     </div>
   </footer>
 
-
+   <script src="../Home page/home.js"></script>
     
-</body>
+  </body>
 </html>
