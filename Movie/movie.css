@@ -162,6 +162,11 @@ a {
     margin: 0 auto;
 }
 
+.movieRow{
+  height: auto;
+  padding-bottom: 100px;
+ 
+}
 
 .hover{
     background-color: #000000b2;
