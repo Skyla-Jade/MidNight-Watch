@@ -110,7 +110,7 @@ function btnLogin() {
                          console.log("aisdkoasl");
 
                         if(result.users[i].account === "active"){
-                            window.location.href = "home.html";
+                            window.location.href = "../Home page/home.html";
                             sessionStorage.setItem("username", username)
                         }else {
                             $(".message1"). css("background-color", "orange")
