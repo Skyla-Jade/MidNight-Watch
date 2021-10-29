@@ -5,109 +5,12 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-/*...navigation...*/
-.nav-holder{
-    height: 55px;  
-    background-color: #03112D;
-    padding-top: 10px;
-}
-
-li b {
-    position: relative;
-    margin-left: 30%;
-    font-size: 20px;
-    color: white;
-    font-weight: normal;
-}
-
-.logo-nav {
-    float: left;
-    margin-left: 2%;
-}
-
-.logo-nav:hover {
-    float: left;
-    margin-left: 2%;
-    cursor: pointer;
-}
-
-.logo-text {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 15px;
-    float: left;
-    margin-top: 2px;
-    color: white;
-    margin-left: 0.5%;
-}
-
-/*...footer...*/
-.footer {
-    width: 100%;
-    height: 60px;
-    background-color: #03112D;
-    float: left;
-    margin-top: 930px;
-}
-
-.logo-footer {
-    float: left;
-    margin-left: 2%;
-    margin-top: 8px;
-}
-
-.footer-text {
-    float: left;
-    font-size: 15px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: white;
-    margin-top: 20px;
-    margin-left: 1%;
-}
-
-.instagram {
-    margin-left: 1%;
-    margin-top: 5px;
-    float: right;
-    margin-right: 2%;
-}
-
-.facebook {
-    margin-left: 1%;
-    margin-top: 5px;
-    float: right;
-}
-
-.twitter {
-    margin-top: 5px;
-    float: right;
-}
-
-.instagram:hover {
-    cursor: pointer;
-    margin-left: 1%;
-    margin-top: 5px;
-    float: right;
-    margin-right: 2%;
-}
-
-.facebook:hover {
-    cursor: pointer;
-    margin-left: 1%;
-    margin-top: 5px;
-    float: right;
-}
-
-.twitter:hover {
-    cursor: pointer;
-    margin-top: 5px;
-    float: right;
-}
-
 
 /*...GENERAL STYLING OF LOGIN/SIGN UP PAGE...*/
 #box{
-    height: 550px;
-    width: 1300px;
+    height: 480px;
+    width: 1000px;
+    width: 80%;
     background:white;
     border:3px solid #9C2EDF;
     position: absolute;
@@ -121,8 +24,9 @@ li b {
 }
 
 #main{
-    height: 650px;
-    width: 580px;
+    height: 750px;
+    width: 700px;
+    margin-top: 10px;
     background:#9C2EDF;
     position: absolute;
     top:50%;
@@ -155,6 +59,9 @@ li b {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     color: white;
+    margin-bottom:40px;
+    margin-top: 80px;
+    
 
 }
 
@@ -166,6 +73,7 @@ li b {
     border-bottom: 1px solid #ffff;
     margin: 5px;
     background: none;
+    color: white;
 }
 
 input::placeholder{
@@ -180,8 +88,8 @@ input::placeholder{
     font-size: 16px;
     border: 1px solid white;
     outline: none;
-    margin-top: 30px;
-    margin-left: 175px;
+    margin-top: 180px !important;
+    margin-left: 10px;
     color:rgb(255, 255, 255);
     cursor: pointer;
 }
@@ -202,7 +110,7 @@ input::placeholder{
     outline: none;
     position: absolute;
     top:65%;
-    left: 75%;
+    left: 80%;
     transform: translate(-50%, -50%);
     transition: all 0.5s;
 }
@@ -223,16 +131,30 @@ input::placeholder{
 #loginMessage, #signupMessage{
     font-family: 'Raleway', sans-serif;
     font-size: 25Px;
-    color: #04163a;
+    color: #03112D;
     position: absolute;
     top:35%;
     left:75%;
+    margin-left: 60px;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 #signupMessage{
-    left:25%;
+    left:20%;
+}
+
+
+.message1{
+    
+    padding-top: 15px;
+    height: 31px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin-top:50px;
 }
 
 /*...ANIMATION EFFECT ON GRADIENT...*/
@@ -249,6 +171,133 @@ input::placeholder{
     100%{
         background-position: 0% 50%;
     }
+}
+
+@media (max-width: 1024px){
+
+    #main{
+        height: 850px;
+        width: 450px;
+        left:80%;
+        padding-top:20px;
+        margin-top:20px;
+    
+    }
+
+    #box{
+        height: 750px;
+        width: 89%;
+        background:white;
+        border:3px solid #9C2EDF;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+        -webkit-box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+        -moz-box-shadow: 0px 0px 45px 5px rgba(156,46,223,1);
+        
+        
+    
+    }
+
+    .message1{
+        padding-top: 5px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 0px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom:-90px;
+        margin-left: -40px;
+        padding-top: 10px;
+
+    }
+
+
+    #signupMessage{
+        left:15%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #signupBtn{
+        height:55px;
+        width: 270px;
+        margin-left: -50px;
+        top: 70%;
+        transform: translate(-50%, -50%);  
+    }
+
+    #loginBtn{
+        height:65px;
+        width: 270px;
+        top: 70%;
+        margin-right:800px;
+        transform: translate(-50%, -50%);  
+    }
+    
+    
+    #signupBtn{
+        left:30%;
+    }
+
+    #loginSection, #signinSection {
+        position: absolute;
+        top:70%;
+        left:75%;
+        transform: translate(-25%, -50%);
+    }
+    
+    #signinSection {
+        top:90%;
+        visibility: hidden;
+    }
+    
+    
+     #signinSection h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        color: white;
+        margin-top: -600px;
+        margin-bottom:100px;
+    }
+
+    #loginSection h1{
+        margin-top: -300px;
+        margin-bottom: 200px;
+    }
+    
+    #loginSection input, #signinSection input{
+        height: 40px;
+        width: 300px;
+        border:0;
+        outline:none;
+        border-bottom: 1px solid #ffff;
+        margin: 5px;
+       margin-left: -80px;
+        background: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    #loginMessage{
+        font-family: 'Raleway', sans-serif;
+        font-size: 35Px;
+        color: #03112D;
+        position: absolute;
+        top:35%;
+        align-items: center;
+        left:73%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+}
 
 
 
@@ -259,4 +308,129 @@ input::placeholder{
 
 
 
-};
+
+
+
+
+
+
+
+@media (max-width: 375px){
+
+    #loginSection button, #signinSection button{
+        height: 40px;
+        width: 120px;
+        background-color: transparent;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        border: 1px solid white;
+        outline: none;
+        margin-top: 20px;
+        margin-left: -4px;
+        margin-bottom: -10px;
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    #main{
+        height: 750px;
+        width: 180px;
+        left:80%;
+        top:47.5%
+    }
+
+    #signupMessage{
+        left:5%;
+        text-align: center;
+        font-size: 20Px;
+    }
+
+    #loginBtn, #signupBtn{
+        height:35px;
+        width: 110px;
+        top: 90%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    
+    
+    #signupBtn{
+        left:36%;
+    }
+
+    #loginSection, #signinSection {
+        position: absolute;
+        top:50%;
+        left:70%;
+        transform: translate(-25%, -50%);
+        z-index: 999;
+    }
+    
+    #signinSection {
+        top:77%;
+        margin-left:-30px;
+    
+        visibility: hidden;
+    }
+
+    #loginSection{
+        top:77%;
+        margin-left:-30px;
+    
+        visibility: hidden;
+    }
+    
+   
+    
+    #loginSection h1, #signinSection h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        color: white;
+        margin-top:-400px
+    
+    }
+    
+    #loginSection input, #signinSection input{
+        height: 40px;
+        width: 120px;
+        border:0;
+        outline:none;
+        border-bottom: 1px solid #ffff;
+        margin: 5px;
+        background: none;
+        color: white;
+        font-size: 12px;
+       
+    }
+
+    #loginMessage{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20Px;
+        color: #03112D;
+        position: absolute;
+        top:35%;
+        text-align: center;
+        left:63%;
+        margin-left: 55px;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .message1{
+        padding-top: 5px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 0px;
+        margin-top: -700px;
+        margin-left:-3px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        
+        padding-top: 10px;
+    }
+
+}
+
