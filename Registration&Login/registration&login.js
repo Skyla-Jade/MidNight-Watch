@@ -124,7 +124,6 @@ function btnLogin() {
                 }else {
                     $(".message1"). css("background-color", "tomato")
                     $(".message1"). text("Your Email or Password does not exist")
-                    
                 }
 
 
