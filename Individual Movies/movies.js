@@ -61,19 +61,44 @@ $.getJSON(url, function(results){
         $(".tagline p").text(tag);
         $(".language p").text(lang);
 
-
+        addToWatchLaterSetup(id,image)
+});
+});
 });
 
 
 
 
 
+function addToWatchLaterSetup(id, image){
+    var moviedetails = [{
+        id: id,
+        title: $('.title').text(),
+        ratting: $('.rating').text(),
+        image: image,
+    }]
+    addToWatchLater(moviedetails)
+};
 
+function addToWatchLater(){
+    let savedMovies = localStorage.getItem("watchLaterList");
+    if(savedMovies === null){
+        savedMovies = JSON.parse(savedMovies);
+        savedMovies.forEach(element => {
+            console.log(element)
+            if(element.id === movieId){
+                alert(`${element.title} has already been added to the watch later list.`);
+            }
+        });
 
+    } else {
+        watchlaterlist = JSON.stringify(savedMovies)
+        localStorage.setItem("watchLaterList", watchlaterlist)
+    }
+}
 
-
-});
-
-
-
+$('.watch-later-btn').click(function (e) { 
+    e.preventDefault();
+    addToWatchLater
+    
 });
