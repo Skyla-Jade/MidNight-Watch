@@ -276,6 +276,7 @@ footer a:hover{
   height: 900px;
   background-color: #04163a;
   padding-top: 50px;
+  position: relative;
 }
 
 .main-block {
@@ -342,3 +343,30 @@ footer a:hover{
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: white;
 }
+
+.watch-later-container{
+  position: absolute;
+  bottom: 100px;
+  margin-left: 50px;
+}
+
+.watch-later-btn{
+  width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #9C2EDF;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #9C2EDF;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.watch-later-btn:hover{
+    color: #9C2EDF;
+    background: transparent;
+}
+
